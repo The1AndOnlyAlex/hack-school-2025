@@ -11,17 +11,6 @@ export default function CreatePage() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [owner, setOwner] = useState("");
-
-  {/**function giveTitle(title) {
-    setTitle(title);
-  }
-  function giveDescription(description) {
-    setTitle(description);
-  }
-  function giveOwner(owner) {
-    setTitle(owner);
-  }*/}
-
   // * End Activity
 
   const [options, setOptions] = useState([""]);
@@ -42,7 +31,7 @@ export default function CreatePage() {
       count: 0,
     }));
 
-    const res = await fetch(`${HOOK_URL}/api/polls`, {
+    const res = await fetch("http://localhost:5000/api/polls", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
