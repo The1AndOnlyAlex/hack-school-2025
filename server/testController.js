@@ -13,23 +13,23 @@ mongoose
 
 // Uncomment this code block to test getPolls
 
-// const { getPolls } = require("./controllers/pollController");
+const { getPolls } = require("./controllers/pollController");
 
-// (async () => {
-//   console.log("Running getPolls()...");
-//   const result = await getPolls();
-//   console.log(result);
-// })();
+(async () => {
+  console.log("Running getPolls()...");
+  const result = await getPolls();
+  console.log(result);
+})();
 
 // Uncomment this code block to test getPoll
 
-// const { getPoll } = require("./controllers/pollController");
+const { getPoll } = require("./controllers/pollController");
 
-// (async () => {
-//   console.log("Running getPoll()...");
-//   const result = await getPoll("67144a73c527df736fbe5eac");
-//   console.log(result);
-// })();
+(async () => {
+  console.log("Running getPoll()...");
+  const result = await getPolls("67144a73c527df736fbe5eac");
+  console.log(result);
+})();
 
 // Uncomment this code block to test postPoll
 
